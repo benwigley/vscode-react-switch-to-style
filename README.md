@@ -1,56 +1,32 @@
-# Switch to Spec
+# React switch to Style
 
-This extension adds a keybinding to switch between the spec file and the code file.
+This extension adds a keybinding to switch between Styles using the CSS Modules pattern and their corresponding React components.
 
 ## How it works?
 
-Spec files should have one of the spec suffixes:
+Style files should have one of the style suffixes below and be in same folder as the code file.
 
-`.spec`, `.test`, `_spec`, `_test`, `-spec`, or `-test`
+`.css`, `.styl`, `.scss`, `.scss`, or `.less`
 
-And it must have the same folder structure as the code file.
+React files should have one of these suffixes:
 
-See some folder structure examples bellow:
+`.js`, `.jsx`, `.ts`, `.tsx`
 
-### Example 1:
 
-Code file: `src/services/users/create_service.rb`
+### Example:
 
-Spec file: `spec/services/users/create_service_spec.rb`
+Code file: `src/components/Dialog/Alert.jsx`
 
-### Example 2:
-
-Code file: `src/components/cards/DashboardCard.js`
-
-Spec file: `src/__tests__/components/cards/DashboardCard.test.js`
-
-### Example 3:
-
-Code file: `src/components/cards/DashboardCard.ts`
-
-Spec file: `__tests__/components/cards/DashboardCard-test.ts`
-
-### Example 4:
-
-Code file: `src/components/cards/DashboardCard.ts`
-
-Spec file: `src/__tests__/components/cards/DashboardCard-test.ts`
+Style file: `src/components/Dialog/Alert.scss`
 
 ## How to use?
 
-Mac OS: `ctrl+alt+t`
+Note: Keep the `cmd`/`ctrl` key held down, then press `k` followed by `.`
 
-Windows: `ctrl+alt+t`
+Mac OS: `cmd+k cmd+.`
 
-## Release Notes
+Windows: `ctrl+k ctrl+.`
 
-### 0.0.2
+## Thanks
 
-Changed keybinding to not conflict with default command `Reopen closed editor`
-
-Removed `when` expression while defining keybinding so editor does not need to be active to trigger
-command
-
-### 0.0.1
-
-Initial release
+Thanks to [rodrigotomonari](https://github.com/rodrigotomonari) for the providing the inspiration and much of the code for this extension via his extension [vscode-switch-to-spec](https://github.com/rodrigotomonari/vscode-switch-to-spec).
