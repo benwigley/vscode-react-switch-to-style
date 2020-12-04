@@ -27,6 +27,18 @@ Mac OS: `cmd+k cmd+.`
 
 Windows: `ctrl+k ctrl+.`
 
+## Installation
+
+This isn't available in the plugin marketplace at the time of writing this.
+
+For Mac users, clone the repo into your `.vscode/extensions/` directory. For others Google where your vscode extensions directory is.
+
+```bash
+# Installation steps for Mac users
+cd .vscode/extensions
+git clone git@github.com:benwigley/vscode-react-switch-to-style.git
+```
+
 ## Thanks
 
 Thanks to [rodrigotomonari](https://github.com/rodrigotomonari) for the providing the inspiration and much of the code for this extension via his extension [vscode-switch-to-spec](https://github.com/rodrigotomonari/vscode-switch-to-spec).
